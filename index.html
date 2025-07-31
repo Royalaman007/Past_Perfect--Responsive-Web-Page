@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seller Pricing Interface</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Select Products</h2>
+
+    <div class="product">
+      <label>
+        <input type="checkbox" class="product-checkbox" data-price="40">
+        <!-- item 1 -->
+        Pokemon Cards - ₹40
+      </label>
+    </div>
+
+    <div class="product">
+      <label>
+        <input type="checkbox" class="product-checkbox" data-price="150">
+        <!-- item 2 -->
+        Extention cord - ₹150
+      </label>
+    </div>
+
+    <div class="product">
+      <label>
+        <input type="checkbox" class="product-checkbox" data-price="39">
+        <!-- item 3 -->
+        Hangers - ₹39 
+      </label>
+    </div>
+
+    <div class="total">
+      Total Earnings: ₹<span id="total">0</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

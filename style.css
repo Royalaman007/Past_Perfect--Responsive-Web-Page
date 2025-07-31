@@ -1,0 +1,63 @@
+:root {
+  --primary: #0a2540;      /* Navy Blue */
+  --accent: #add8e6;       /* Light Blue */
+  --bg: #e7f0ff;           /* Slight blue background */
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h2 {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+  font-size: 1.1rem;
+}
+
+.product input {
+  margin-right: 10px;
+}
+
+.total {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary);
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .product {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
