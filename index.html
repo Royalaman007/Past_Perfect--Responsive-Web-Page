@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Seller Pricing Interface</title>
+  <title>Quick sell</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
+    <h1 class="main-heading">Quick Sell</h1>
+    <p class="placeholder-text">
+      Select items you wish to sell quickly. The total amount you’ll earn will be displayed below.
+    </p>
+
     <h2>Select Products</h2>
 
     <div class="product">
       <label>
         <input type="checkbox" class="product-checkbox" data-price="40">
-        <!-- item 1 -->
         Pokemon Cards - ₹40
       </label>
     </div>
@@ -21,21 +25,24 @@
     <div class="product">
       <label>
         <input type="checkbox" class="product-checkbox" data-price="150">
-        <!-- item 2 -->
-        Extention cord - ₹150
+        Extension Cord - ₹150
       </label>
     </div>
 
     <div class="product">
       <label>
         <input type="checkbox" class="product-checkbox" data-price="39">
-        <!-- item 3 -->
         Hangers - ₹39 
       </label>
     </div>
 
     <div class="total">
       Total Earnings: ₹<span id="total">0</span>
+    </div>
+
+    <div class="button-group">
+      <button class="btn back">Back to Home</button>
+      <button class="btn sell">Sell</button>
     </div>
   </div>
 
